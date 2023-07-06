@@ -1,0 +1,543 @@
+body{
+    margin: 0;
+}
+
+@media all and (max-width:450px) {
+    nav{
+        background-color: black;
+        border-radius: 5px;
+        overflow: hidden;
+        width: 100%;
+        position: fixed;
+    }
+    nav img{
+        width: 35px;
+        height: 15px;
+        float: left;
+    }
+    nav .a1{
+        text-decoration: none;
+        font-size: 10px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: white;
+        text-align: right;
+        padding: 6px;
+        
+        float: left;
+    }
+    .stmnt{
+        font-family: Fasthand, Courier, monospace;
+        font-size: 35px;
+        font-weight: lighter;
+    }
+    .Title{
+        font-family: Caprasimo, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 15px;
+        margin-left: 5px;
+    }
+    #intro{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #intro1{
+        background-color: rgb(246, 197, 107);
+        padding-top: min(15px, 20%); 
+        text-align: center;
+    }
+    #intro2{
+        background-color: rgb(246, 197, 107);
+    }
+    #intro2 img{
+        width: 100%;
+    }
+    #intro1 input[type="button"]{
+        background-color: rgb(79, 42, 21);
+        border-radius: 14px;
+        padding: 3px;
+        color: wheat;
+        box-shadow: 8px 5px 5px rgba(79, 42, 21, 0.317) ;
+    }
+    hr{
+        background-color: rgb(79, 42, 21);
+    }
+    #Best-Selling-Books{
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(246, 197, 107);
+        padding: 5px;
+    }
+    .bestbooks{ 
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        grid-auto-rows: minmax(200px, auto);
+        grid-auto-columns: minmax(500px, auto);
+    }
+    #bestbooks1 img, #bestbooks2 img, #bestbooks3 img, #bestbooks4 img{ 
+        width: 100%;
+        align-self: center;
+        padding: 10px;
+        margin-left: auto;
+        margin-left: auto;
+    }
+    #bestbooks1, #bestbooks2, #bestbooks3, #bestbooks4, .recbooks{
+        background-color: rgb(250, 241, 196);
+        border: 2px solid rgb(214, 151, 34);
+        border-radius: 8px;
+        box-sizing: border-box;
+        box-shadow: 5px 3px 3px rgb(214, 151, 34);
+        padding: 10px 20px 10px 20px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .bestbooks .last-line1, .section .last-line1{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    #last-line12{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        text-align: end;
+    }
+    .bestbooks .second-line1, .section .second-line1{
+        margin-top: 3px;
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-gap: 5px;
+    }
+    #second-line12{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        align-self: center;
+    }
+    #second-line12 input[type="button"]{
+        color: wheat;
+        background-color: rgb(79, 42, 21);
+        float: right;
+    }
+    #Recommendation{     
+        padding: 5px;
+        background-color: rgb(246, 197, 107); 
+    }
+    #Recommendation .form {
+        display: flex;
+        flex-direction: row;
+      }
+      .search-field {
+        width: 100%;
+        padding: 10px 35px 10px 15px;
+        border: none;
+        border-radius: 100px;
+        outline: none;
+      }
+      
+      .search-button {
+        background: transparent;
+        border: none;
+        outline: none;
+        margin-left: -33px;
+      }
+      
+      .search-button img {
+        width: 20px;
+        height: 20px;
+        object-fit: cover;
+      }
+    #Recommendation img{
+        width: 100%;
+        align-self: center;
+        padding: 10px;
+        margin-left: auto;
+        margin-left: auto;
+    }
+    #Recommendation{
+        display: flexbox;
+        flex-direction: column;
+    }
+    #Recommendation p{
+        font-weight: bold;
+        font-size: large;
+        margin-left: 10px;
+    }
+    .genre1, .genre2, .genre3, .genre4, .genre5{ 
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        grid-auto-rows: minmax(200px, auto);
+        grid-auto-columns: minmax(500px, auto);
+        margin: 4px;
+    }
+    #recbooks1{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    
+    }
+    #recbooks2{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    #recbooks3{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    #Reviews{
+        background-color: rgb(246, 197, 107);
+    }
+    .section3 {
+        display: flex;
+        flex-direction: column;
+    }
+    #Reviews img{
+        width: 100%;
+    }
+    
+    .pplreview{
+        display: grid;
+        background-color: rgb(250, 241, 196);
+        grid-template-columns: 25% 75%;
+        border: 3px rgb(214, 151, 34) solid;
+        border-radius: 5px;
+        padding: 3px;
+        box-shadow: 8px 5px 5px rgb(214, 151, 34);
+        margin: 8px;
+    }
+    
+    .reviews2{
+        background-color: rgb(250, 241, 196);
+        align-items: center;
+        border: 3px rgb(214, 151, 34) solid;
+        border-radius: 5px;
+        box-shadow: 8px 5px 5px rgb(214, 151, 34);
+        margin: 5px 25px 5px 25px ;
+        padding: 10px 20px 10px 20px;
+    }
+    
+    .reviews2 input[type="text"], .reviews2 input[type="email"], .reviews2 textarea{
+        width: 100%;
+    }
+    
+    .reviews2 .title{
+        font-size: larger;
+    }
+    footer img{
+        width: 10px;
+        border-radius: 50%;
+    }
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: rgb(191, 182, 165);
+        font-size: smaller;
+    }
+    .footer1 a, .footer2 a, .footer3 a, .footer4 a{
+        text-decoration: none;
+        margin: 2px;
+        padding: 2px;
+    }
+    .footer1 a{
+        font-size: 10px;
+    }
+    .footer2 a{
+        float: right;
+    }
+    
+    #fb, #da{
+        margin-left: 10px;
+    }
+    #ig, #g, #tw{
+        margin-left: 10px;
+    }
+    .footer4{
+        text-align: end;
+    }
+}
+@media all and (min-width:451px ){
+    nav{
+        background-color: black;
+        border-radius: 5px;
+        overflow: hidden;
+        width: 100%;
+        position: fixed;
+    }
+    nav img{
+        width: 45px;
+        height: 25px;
+        float: left;
+    }
+    nav .a1{
+        text-decoration: none;
+        font-size: larger;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: white;
+        text-align: right;
+        padding: 6px;
+        
+        float: left;
+    }
+    .stmnt{
+        font-family: Fasthand, Courier, monospace;
+        font-size: 55px;
+        font-weight: lighter;
+    }
+    .Title{
+        font-family: Caprasimo, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 25px;
+        margin-left: 5px;
+    }
+    #intro{
+        display: flex;
+        flex-direction: row;
+    }
+    #intro1{
+        width: 60%;
+        background-color: rgb(246, 197, 107);
+        padding-top: min(50px, 20%); 
+        text-align: center;
+    }
+    #intro1 input[type="button"]{
+        background-color: rgb(79, 42, 21);
+        border-radius: 14px;
+        padding: 3px;
+        color: wheat;
+        box-shadow: 8px 5px 5px rgba(79, 42, 21, 0.317) ;
+    }
+    #intro2{
+        background-color: rgb(246, 197, 107);
+    }
+    #Best-Selling-Books{
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(246, 197, 107);
+        padding: 5px;
+    }
+    .bestbooks{ 
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+        grid-auto-rows: minmax(200px, auto);
+        grid-auto-columns: minmax(500px, auto);
+    }
+    #bestbooks1 img, #bestbooks2 img, #bestbooks3 img, #bestbooks4 img{ 
+        width: 100%;
+        align-self: center;
+        padding: 10px;
+        margin-left: auto;
+        margin-left: auto;
+    }
+    #bestbooks1, #bestbooks2, #bestbooks3, #bestbooks4, .recbooks{
+        background-color: rgb(250, 241, 196);
+        border: 2px solid rgb(214, 151, 34);
+        border-radius: 8px;
+        box-sizing: border-box;
+        box-shadow: 5px 3px 3px rgb(214, 151, 34);
+        padding: 10px 20px 10px 20px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    #description{
+        display: none;
+    }
+
+    .bestbooks .last-line1, .section .last-line1{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #last-line12{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        text-align: end;
+    }
+    .bestbooks .second-line1, .section .second-line1{
+        margin-top: 3px;
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-gap: 5px;
+    }
+    #second-line12{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        align-self: center;
+    }
+    #second-line12 input[type="button"]{
+        color: wheat;
+        background-color: rgb(79, 42, 21);
+        float: right;
+    }
+    #second-line12 input[type="button"]:active{
+        background-color: green;
+        initial-value: "Added";
+    }
+    #Recommendation{     
+        padding: 5px;
+        background-color: rgb(246, 197, 107); 
+    }
+    #Recommendation .form {
+        display: flex;
+        flex-direction: row;
+      }
+      .search-field {
+        width: 40%;
+        padding: 3px 6px 3px 6px;
+        border: none;
+        border-radius: 70px;
+        outline: none;
+      }
+      
+      .search-button {
+        background: transparent;
+        border: none;
+        outline: none;
+        margin-right: 10px;
+      }
+      
+      .search-button img {
+        width: 20px;
+        height: 20px;
+        object-fit: contain;
+      }
+    
+    #Recommendation img{
+        width: 100%;
+        align-self: center;
+        padding: 10px;
+        margin-left: auto;
+        margin-left: auto;
+    }
+    #Recommendation{
+        display: flexbox;
+        flex-direction: column;
+    }
+    #Recommendation p{
+        font-weight: bold;
+        font-size: large;
+        margin-left: 10px;
+    }
+    .genre1, .genre2, .genre3, .genre4, .genre5{ 
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+        grid-auto-rows: minmax(200px, auto);
+        grid-auto-columns: minmax(500px, auto);
+        margin: 4px;
+    }
+    #recbooks1{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    
+    }
+    #recbooks2{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    #recbooks3{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    #Reviews{
+        background-color: rgb(246, 197, 107);
+    }
+    .section3 {
+        display: flex;
+        
+    }
+    #Reviews img{
+        width: 150px;
+    }
+    
+    .pplreview{
+        display: grid;
+        background-color: rgb(250, 241, 196);
+        grid-template-columns: 160px 500px;
+        border: 3px rgb(214, 151, 34) solid;
+        border-radius: 5px;
+        padding: 3px;
+        box-shadow: 8px 5px 5px rgb(214, 151, 34);
+        margin: 8px;
+    }
+    .pplreview #ppl{
+        font-weight: bold;
+    }
+    
+    .reviews2{
+        background-color: rgb(250, 241, 196);
+        align-items: center;
+        border: 3px rgb(214, 151, 34) solid;
+        border-radius: 5px;
+        box-shadow: 8px 5px 5px rgb(214, 151, 34);
+        margin: 5px 25px 5px 25px ;
+        padding: 10px 20px 10px 20px;
+    }
+    
+    .reviews2 input[type="text"], .reviews2 input[type="email"], .reviews2 textarea{
+        width: 100%;
+        border: 2px rgb(214, 151, 34) solid;
+        border-radius: 4px;
+    }
+    .reviews2 input[type="submit"]{
+        background-color: rgb(79, 42, 21);
+        border-radius: 4px;
+        color: wheat;
+        transition: background-color 1s;
+    }
+    .reviews2 input[type="submit"]:hover{
+        background-color: green;
+    }
+    
+    .reviews2 .title{
+        font-size: larger;
+    }
+    footer img{
+        width: 20px;
+        border-radius: 50%;
+    }
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: rgb(191, 182, 165);
+        
+    }
+    .footer1 a, .footer2 a, .footer3 a, .footer4 a{
+        text-decoration: none;
+        margin: 5px;
+        padding: 2px;
+    }
+    .footer2 a{
+        
+        float: right;
+    }
+    .footer2 input[type="button"]{
+        background-color: rgb(150, 106, 24);
+        color: wheat;
+    }
+    .footer2 input[type="button"]:hover{
+        animation: btt 1s ease 0s 1 both;
+    }
+    @keyframes btt {
+        100%{
+            border-radius: 30%;
+            height: 50px;
+        }
+        
+    }
+    #fb, #da{
+        margin-left: 70px;
+    }
+    #ig, #g, #tw{
+        margin-left: 10px;
+    }
+    .footer4{
+        text-align: end;
+    }
+}
+
+

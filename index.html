@@ -1,0 +1,464 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Fasthand&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="bkstyle.css" />
+    <title>Book Shop</title>
+  </head>
+  <body>
+    <nav>
+      <img src="img/logo1.jpg" alt="" />
+      <a class="a1" href="#intro">Intro</a>
+      <a class="a1" href="#Best-Selling-Books">Best Selling Books</a>
+      <a class="a1" href="#Recommendation">Recommendation</a>
+      <a class="a1" href="#Reviews">Reviews</a>
+    </nav>
+
+    <div class="section" id="intro">
+      <div class="intro" id="intro1">
+        <h4 class="Title">Fact and Fiction</h4>
+        <h1 class="Stmnt">The heaven of knowledge</h1>
+        <a href="#Best-Selling-Books"
+          ><input type="button" value="Best Selling Books"
+        /></a>
+      </div>
+      <div class="intro" id="intro2">
+        <img src="img/intro.jpg" alt="" />
+      </div>
+    </div>
+    <div class="section" id="Best-Selling-Books">
+      <a class="Title">
+        <hr>Our Best Selling Books</a>
+      <a class="Subtitle">These are a few collection of our best selling books</a>
+      <div class="bestbooks">
+        <div id="bestbooks1">
+          <img src="img/harry.jpg" alt="" />
+          <div class="second-line1">
+            <div id="second-line11">Harry Potter and the Sorcerer's Stone</div>
+            <div id="second-line12"><input type="button" value="Add+" /></div>
+          </div>
+
+          <div class="last-line1">
+            <div id="last-line11">30% off</div>
+            <div id="last-line12">Rs. 325</div>
+          </div>
+        </div>
+        <div id="bestbooks2">
+          <img src="img/ends.jpeg" alt="" />
+          <div class="second-line1">
+            <div id="second-line11">It Ends With Us</div>
+            <div id="second-line12"><input type="button" onclick="msg()" value="Add+" /></div>
+          </div>
+          <div class="last-line1">
+            <div id="last-line11">30% off</div>
+            <div id="last-line12">Rs. 315</div>
+          </div>
+        </div>
+        <div id="bestbooks3">
+          <img src="img/The-Girl-On-The-Train-by-Paula-Hawkins-.jpg" alt="" />
+          <div class="second-line1">
+            <div id="second-line11">The Girl On the Train</div>
+            <div id="second-line12"><input type="button" value="Add+" /></div>
+          </div>
+          <div class="last-line1">
+            <div id="last-line11">30% off</div>
+            <div id="last-line12">Rs. 295</div>
+          </div>
+        </div>
+        <div id="bestbooks4">
+          <img src="img/The_Secret_of_the_Nagas.jpg" alt="" />
+          <div class="second-line1">
+            <div id="second-line11">The The Secret of the Nagas</div>
+            <div id="second-line12"><input type="button" value="Add+" /></div>
+          </div>
+          <div class="last-line1">
+            <div id="last-line11">30% off</div>
+            <div id="last-line12">Rs. 305</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section" id="Recommendation">
+      <a class="Title">
+        <hr>Recommendation</a>
+      <br />
+      <a class="Subtitle">Here are some of the recommended books, clustered according to genre.
+        You can also search to check the availability of your wanted books.</a
+      >
+      <br />
+      
+      <div class="container">
+        <form action="/" method="GET" class="form">
+          <input type="search" placeholder="Search" class="search-field" />
+          <button type="submit" class="search-button">
+            <img src="search.webp">
+          </button>
+        </form>
+      </div>
+      <hr />
+      <p>Romance</p>
+      <div class="genre1">
+        <div class="recbooks">
+          <img src="img/ends.jpeg" alt="" />
+          <div class="second-line1">
+            <div id="second-line11">It Ends With Us</div>
+            <div id="second-line12"><input type="button" value="Add+" /></div>
+          </div>
+          <div class="last-line1">
+            <div id="last-line11">30% off</div>
+            <div id="last-line12">Rs. 315</div>
+          </div>
+        </div>
+        <div class="recbooks">
+          <img src="img/thelove.jpeg" alt="" />
+          <div class="second-line1">
+            <div id="second-line11">The Love Hypothesis</div>
+            <div id="second-line12"><input type="button" value="Add+" /></div>
+          </div>
+          <div class="last-line1">
+            <div id="last-line11">30% off</div>
+            <div id="last-line12">Rs. 315</div>
+          </div>
+        </div>
+        <div class="recbooks">
+          <img src="img/theydie.jpeg" alt="" />
+          <div class="second-line1">
+            <div id="second-line11">They Both Die At The End</div>
+            <div id="second-line12"><input type="button" value="Add+" /></div>
+          </div>
+          <div class="last-line1">
+            <div id="last-line11">30% off</div>
+            <div id="last-line12">Rs. 315</div>
+          </div>
+        </div>
+        <div class="recbooks">
+          <img src="img/redwhite.jpg" alt="" />
+          <div class="second-line1">
+            <div id="second-line11">Red White And Royal Blue</div>
+            <div id="second-line12"><input type="button" value="Add+" /></div>
+          </div>
+          <div class="last-line1">
+            <div id="last-line11">30% off</div>
+            <div id="last-line12">Rs. 315</div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <p>Fantasy</p>
+      <div class="genre2">
+        <div class="recbooks">
+          <img src="img/onering.jpg" alt="" />
+          <div class="second-line1">
+            <div id="second-line11">The Lord Of The Rings Series</div>
+            <div id="second-line12"><input type="button" value="Add+" /></div>
+          </div>
+          <div class="last-line1">
+            <div id="last-line11">30% off</div>
+            <div id="last-line12">Rs. 315</div>
+          </div>
+        </div>
+        <div class="recbooks">
+          <img src="img/harry.jpg" alt="" />
+          <div class="second-line1">
+            <div id="second-line11">Harry Potter Series</div>
+            <div id="second-line12"><input type="button" value="Add+" /></div>
+          </div>
+          <div class="last-line1">
+            <div id="last-line11">30% off</div>
+            <div id="last-line12">Rs. 315</div>
+          </div>
+        </div>
+        <div class="recbooks">
+          <img src="img/hungergames.jpeg" alt="" />
+          <div class="second-line1">
+            <div id="second-line11">The Hunger Games</div>
+            <div id="second-line12"><input type="button" value="Add+" /></div>
+          </div>
+          <div class="last-line1">
+            <div id="last-line11">30% off</div>
+            <div id="last-line12">Rs. 315</div>
+          </div>
+        </div>
+        <div class="recbooks">
+          <img src="img/percy.jpg" alt="" />
+          <div class="second-line1">
+            <div id="second-line11">Percy Jackson Series</div>
+            <div id="second-line12"><input type="button" value="Add+" /></div>
+          </div>
+          <div class="last-line1">
+            <div id="last-line11">30% off</div>
+            <div id="last-line12">Rs. 315</div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <p>Non-Fiction</p>
+      <div class="genre3">
+        <div class="recbooks">
+          <img src="img/rich.jpg" alt="" />
+          <div class="second-line1">
+            <div id="second-line11">Rich Dad Poor Dad</div>
+            <div id="second-line12"><input type="button" value="Add+" /></div>
+          </div>
+          <div class="last-line1">
+            <div id="last-line11">30% off</div>
+            <div id="last-line12">Rs. 315</div>
+          </div>
+        </div>
+        <div class="recbooks">
+          <img src="img/atomic.jpg" alt="" />
+          <div class="second-line1">
+            <div id="second-line11">Atomic Habits</div>
+            <div id="second-line12"><input type="button" value="Add+" /></div>
+          </div>
+          <div class="last-line1">
+            <div id="last-line11">30% off</div>
+            <div id="last-line12">Rs. 315</div>
+          </div>
+        </div>
+        <div class="recbooks">
+          <img src="img/subtle-art.jpeg" alt="" />
+          <div class="second-line1">
+            <div id="second-line11">The Subtle Art Of Not Giving A Fuck</div>
+            <div id="second-line12"><input type="button" value="Add+" /></div>
+          </div>
+          <div class="last-line1">
+            <div id="last-line11">30% off</div>
+            <div id="last-line12">Rs. 315</div>
+          </div>
+        </div>
+        <div class="recbooks">
+          <img src="img/alchemist.jpg" alt="" />
+          <div class="second-line1">
+            <div id="second-line11">The Alchemist</div>
+            <div id="second-line12"><input type="button" value="Add+" /></div>
+          </div>
+          <div class="last-line1">
+            <div id="last-line11">30% off</div>
+            <div id="last-line12">Rs. 315</div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <p>Historical Fiction</p>
+      <div class="genre4">
+        <div class="recbooks">
+          <img src="img/kite-runner.jpeg" alt="" />
+          <div class="second-line1">
+            <div id="second-line11">The Kite Runner</div>
+            <div id="second-line12"><input type="button" value="Add+" /></div>
+          </div>
+          <div class="last-line1">
+            <div id="last-line11">30% off</div>
+            <div id="last-line12">Rs. 315</div>
+          </div>
+        </div>
+        <div class="recbooks">
+          <img src="img/A-Thousand-Splendid-Suns.png" alt="" />
+          <div class="second-line1">
+            <div id="second-line11">A A Thousand Splendid Suns</div>
+            <div id="second-line12"><input type="button" value="Add+" /></div>
+          </div>
+          <div class="last-line1">
+            <div id="last-line11">30% off</div>
+            <div id="last-line12">Rs. 315</div>
+          </div>
+        </div>
+        <div class="recbooks">
+          <img src="img/bookthief.jpeg" alt="" />
+          <div class="second-line1">
+            <div id="second-line11">The Book Thief</div>
+            <div id="second-line12"><input type="button" value="Add+" /></div>
+          </div>
+          <div class="last-line1">
+            <div id="last-line11">30% off</div>
+            <div id="last-line12">Rs. 315</div>
+          </div>
+        </div>
+        <div class="recbooks">
+          <img src="img/beloved.jpg" alt="" />
+          <div class="second-line1">
+            <div id="second-line11">Beloved</div>
+            <div id="second-line12"><input type="button" value="Add+" /></div>
+          </div>
+          <div class="last-line1">
+            <div id="last-line11">30% off</div>
+            <div id="last-line12">Rs. 315</div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <p>Mystery</p>
+      <div class="genre5">
+        <div class="recbooks">
+          <img src="img/and-then-there-were-none.png" alt="" />
+          <div class="second-line1">
+            <div id="second-line11">And Then There Were None</div>
+            <div id="second-line12"><input type="button" value="Add+" /></div>
+          </div>
+          <div class="last-line1">
+            <div id="last-line11">30% off</div>
+            <div id="last-line12">Rs. 315</div>
+          </div>
+        </div>
+        <div class="recbooks">
+          <img src="img/The-Girl-On-The-Train-by-Paula-Hawkins-.jpg" alt="" />
+          <div class="second-line1">
+            <div id="second-line11">The Girl On The Train</div>
+            <div id="second-line12"><input type="button" value="Add+" /></div>
+          </div>
+          <div class="last-line1">
+            <div id="last-line11">30% off</div>
+            <div id="last-line12">Rs. 315</div>
+          </div>
+        </div>
+        <div class="recbooks">
+          <img src="img/sherlock.jpeg" alt="" />
+          <div class="second-line1">
+            <div id="second-line11">The Complete Sherlock Holmes</div>
+            <div id="second-line12"><input type="button" value="Add+" /></div>
+          </div>
+          <div class="last-line1">
+            <div id="last-line11">30% off</div>
+            <div id="last-line12">Rs. 315</div>
+          </div>
+        </div>
+        <div class="recbooks">
+          <img src="img/lying.jpg" alt="" />
+          <div class="second-line1">
+            <div id="second-line11">One Of Us Is Lying</div>
+            <div id="second-line12"><input type="button" value="Add+" /></div>
+          </div>
+          <div class="last-line1">
+            <div id="last-line11">30% off</div>
+            <div id="last-line12">Rs. 315</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div  id="Reviews"> <a class="Title">Reviews</a>
+      <div class="section3">
+        <div class="reviews1">
+          <div class="pplreview">
+            <div>
+              <img src="img/ppl1.jpeg" alt="" />
+            </div>
+            <div>
+              <a id="ppl">Aditya Nautiyal</a>
+              <p>
+                This is the best used bookstore I’ve ever encountered. While
+                this is a difficult bookstore to browse quickly for a new book,
+                due to massive quantity of books and sections, if you are
+                looking for something specific, you are likely to find it here
+                in good shape and for a decent price. We always buy more than we
+                expect when we go here.
+              </p>
+            </div>
+          </div>
+          <div class="pplreview">
+            <div>
+              <img src="img/ppl2.jpeg" alt="" />
+            </div>
+            <div>
+              <a id="ppl">Shreya Mukherjee</a>
+              <p>
+                I love this store. My dream is to own a book store but for now,
+                I come here to just get away and travel to any place that
+                touches me. Even just for pure pleasure. Don't be surprised that
+                the hours slip by while you are in here. Bit it's always time
+                well spent. The staff are warm, helpful and friendly. You want
+                to travel but don't want to leave home? Step in here and lose
+                yourself in the pages of a good book.
+              </p>
+            </div>
+          </div>
+          <div class="pplreview">
+            <div>
+              <img src="img/ppl3.jpeg" alt="" />
+            </div>
+            <div>
+              <a id="ppl">Ashravi Nayak</a>
+              <p>
+                This is the most iconic book store I know of. The rooms is
+                packed floor to ceiling with books of all genres. You can spend
+                hours here hunting for your favourite authors and find new and
+                exciting books. No matter the subject, they will have it!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="reviews2" id="yrreview">
+          <p class="title">Add your review</p>
+          <form action="">
+            <section class="element">
+              <p>
+                <p> Name </p>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Your Name"
+                  required
+                />
+              </p>
+              <p>
+                <p>Email</p> 
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="abcd@gmail.com"
+                  required
+                />
+              </p>
+              <p>
+                Your Review
+              </p>
+              <p>
+                <textarea name="message" id="message" cols="50" rows="11" required></textarea>
+              </p>
+              <input type="submit" placeholder="Submit" />
+            </section>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer">
+        <div class="footer1">
+          <a href="">Terms And Conditons</a>
+          <br>
+          <a href="">Privacy Policy</a>
+          <br>
+          <a href="">Copyright Information</a>
+        </div>
+        <div class="footer2">
+          <a href="#intro">
+            <input type="button" value="Back to Top">
+          </a>
+        </div>
+        <div class="footer3">
+          <a>Follow Us</a>
+          <a href="https://www.facebook.com/profile.php?id=100085725998538" id="fb">
+            <img src="img/fb.jpeg" alt="">
+          </a>
+          <a href="https://www.instagram.com/_._n.e.i.l_._/" id="ig">
+            <img src="img/ig.jpeg" alt="">
+          </a>
+          <a href="nilesh.barui51003@gmail.com" id="g">
+            <img src="img/g.png" alt="">
+          </a>
+          <a href="https://twitter.com/nilesh_barui" id="tw">
+            <img src="img/tweet.png" alt="">
+          </a></div>
+        <div class="footer4">
+          <a href="" id="rights">All Rights Reserved </a> <a id="da">2019</a>  </div>
+      </div>
+    </footer>
+  </body>
+</html>
